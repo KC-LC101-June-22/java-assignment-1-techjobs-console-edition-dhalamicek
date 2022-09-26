@@ -32,9 +32,9 @@ public class JobData {
         ArrayList<String> values = new ArrayList<>();
 
         for (HashMap<String, String> row : allJobs) {
-            String aValue = row.get(field).toLowerCase();
+            String aValue = row.get(field);
 
-            if (!values.contains(aValue.toLowerCase())) {
+            if (!values.contains(aValue)) {
                 values.add(aValue);
             }
         }
