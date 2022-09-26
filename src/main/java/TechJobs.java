@@ -129,8 +129,8 @@ public class TechJobs {
         } else {
             for (HashMap<String, String> job : someJobs) {
 
-                String breakLine = "\n+*****";
-                System.out.println(breakLine);
+                String breakLine = "*****";
+                System.out.println("\n"+breakLine);
 
                     for (Map.Entry<String, String> jobKey : job.entrySet()) {
 
