@@ -119,8 +119,8 @@ public class TechJobs {
 
        private static void printJobs(ArrayList<HashMap<String, String>> someJobs) {
 
-//(someJobs.size() == 0)
-        if (someJobs.equals("null")) {
+
+        if (someJobs.size() == 0) {
             System.out.println("No Results");
             } else {
             for (HashMap<String, String> job : someJobs) {
