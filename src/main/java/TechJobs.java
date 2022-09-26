@@ -77,7 +77,7 @@ public class TechJobs {
         Boolean validChoice = false;
         String[] choiceKeys = new String[choices.size()];
 
-        // Put the choices in an ordered structure so we can
+        // Put the choices in an ordered structure, so we can
         // associate an integer with each one
         int i = 0;
         for (String choiceKey : choices.keySet()) {
@@ -117,20 +117,16 @@ public class TechJobs {
         return choiceKeys[choiceIdx];
     }
 
-    // Print a list of jobs
-    //if there are jobs, then it should print and keep looping until there are no jobs in the list, then stop
-    //if there are no jobs, then it should print "No results"
-    private static void printJobs(ArrayList<HashMap<String, String>> someJobs) {
+       private static void printJobs(ArrayList<HashMap<String, String>> someJobs) {
 
 
         if (someJobs.size() == 0) {
             System.out.println("No Results");
-            return;
-        } else {
+            } else {
             for (HashMap<String, String> job : someJobs) {
 
                 String breakLine = "*****";
-                System.out.println("\n"+breakLine);
+                System.out.println("\n" + breakLine);
 
                     for (Map.Entry<String, String> jobKey : job.entrySet()) {
 
