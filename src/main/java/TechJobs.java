@@ -129,14 +129,14 @@ public class TechJobs {
         } else {
             for (HashMap<String, String> job : someJobs) {
 
-                String breakLine = "*****";
+                String breakLine = "\n+*****";
                 System.out.println(breakLine);
 
                     for (Map.Entry<String, String> jobKey : job.entrySet()) {
 
                         System.out.println(jobKey.getKey() + ": " + jobKey.getValue());
                     }
-                    System.out.println(breakLine+"\n");
+                    System.out.println(breakLine);
                 }
             }
 
